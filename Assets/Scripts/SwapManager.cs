@@ -122,40 +122,7 @@ public class SwapManager : MonoBehaviour
         }
         return nextPiece;
     }
-    /* public GameObject yandakiObjez(GameObject obj)
-     {
-         RaycastHit hit;
-         GameObject[] gos;
-         gos = GameObject.FindGameObjectsWithTag("cube");
-         GameObject nextPiece = null;
-         foreach (GameObject go in gos)
-         {
-            // print(go);
-            // print(obj.transform.position);
-             if (Physics.Raycast(obj.transform.position, obj.transform.forward, out hit, 4.00f))
-             {
-                 //print("ife girdi");
-                 if (hit.collider.gameObject == go)
-                 {
-
-                     print("asagısında" + go);
-                     nextPiece = go;
-                 }
-
-             }
-             else if (Physics.Raycast(obj.transform.position, -obj.transform.forward, out hit, 4.00f))
-             {
-                 if (hit.collider.gameObject == go)
-                 {
-                     print("yukarısında" + go);
-                     nextPiece = go;
-                 }
-
-             }
-
-         }
-         return nextPiece;
-     }*/
+   
     public void swap()
     {
         Vector3 temp;
